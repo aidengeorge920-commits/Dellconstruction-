@@ -18,7 +18,6 @@
 
 const GALLERY = [
   { src: "images/exterior1.jpg", caption: "New build — exterior" },
-  { src: "images/exterior2.jpg", caption: "New build — exterior" },
   { src: "images/kitchen1.jpg", caption: "New build — kitchen" },
   { src: "images/bathroom1.jpg", caption: "New build — bathroom" },
   { src: "images/lounge1.jpg", caption: "New build — living area" },
