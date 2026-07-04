@@ -17,10 +17,13 @@
    ---------------------------------------------------------- */
 
 const GALLERY = [
-  // { src: "images/kanahooka-exterior.jpg", caption: "Kanahooka — duplex, exterior" },
-  // { src: "images/kanahooka-interior.jpg", caption: "Kanahooka — living area" },
-  // { src: "images/rosemeadow-exterior.jpg", caption: "Rosemeadow — 158 Copperfield Dr" },
-  // { src: "images/rosemeadow-kitchen.jpg", caption: "Rosemeadow — kitchen" },
+  { src: "images/exterior2.jpg", caption: "New build — exterior" },
+  { src: "images/exterior1.jpg", caption: "New build — exterior" },
+  { src: "images/kitchen1.jpg", caption: "New build — kitchen" },
+  { src: "images/bathroom1.jpg", caption: "New build — bathroom" },
+  { src: "images/lounge1.jpg", caption: "New build — living area" },
+  { src: "images/lounge2.jpg", caption: "New build — living area" },
+  { src: "images/theatre.jpg", caption: "New build — lounge area" },
 ];
 
 const REVIEWS = [
