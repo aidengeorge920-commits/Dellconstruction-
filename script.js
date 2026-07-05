@@ -52,7 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initHeroDraw();
   initReveal();
   initCounters();
-  initContactForm();
 });
 
 function initNav() {
@@ -169,28 +168,4 @@ function initCounters() {
     { threshold: 0.5 }
   );
   stats.forEach((el) => observer.observe(el));
-}
-
-/* Contact form: build a mailto link so no backend/server is needed */
-function initContactForm() {
-  const form = document.querySelector(".contact-form");
-  if (!form) return;
-
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const data = new FormData(form);
-    const name = data.get("name") || "";
-    const email = data.get("email") || "";
-    const phone = data.get("phone") || "";
-    const message = data.get("message") || "";
-
-    const businessEmail = "georkul@gmail.com";
-
-    const subject = encodeURIComponent(`New enquiry from ${name}`);
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`
-    );
-
-    window.location.href = `mailto:${businessEmail}?subject=${subject}&body=${body}`;
-  });
 }
